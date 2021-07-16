@@ -1,1 +1,27 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+--primary-color: #FF6C00;
+--secondary-color: #191C26;
 
+--text-primary: #303030;
+--text-secondary: #9DA4BD;
+}
+
+h2.section-title {
+    color: var(--text-primary);
+font-family: "Raleway";
+font-weight: 700;
+font-size: 42px;
+}
+
+h2.section-title.lighten {
+    color: #FFFFFF;
+}
+
+#FFFFFF
+rgba(157, 164, 189, 0.6);
+ #9DA4BD;
+ #303030;
+#555555
