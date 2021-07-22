@@ -2,26 +2,83 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 :root {
---primary-color: #FF6C00;
---secondary-color: #191C26;
+  --primary-color: #ff6c00;
+  --secondary-color: #191c26;
 
---text-primary: #303030;
---text-secondary: #9DA4BD;
+  --text-primary: #303030;
+  --text-secondary: #9da4bd;
+  --text-primary-lighten: #555555;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.suptitle-secondary {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: rgba(157, 164, 189, 0.6);
 }
 
 h2.section-title {
-    color: var(--text-primary);
-font-family: "Raleway";
-font-weight: 700;
-font-size: 42px;
+  color: var(--text-primary);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
 }
 
 h2.section-title.lighten {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
-#FFFFFF
-rgba(157, 164, 189, 0.6);
- #9DA4BD;
- #303030;
-#555555
+.hero-description {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+/* Navbar */
+
+nav.navbar {
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+a.nav-link {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+}
+
+a.nav-link:hover,
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+p.section-description {
+  color: var(--text-primary-lighten);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+
+.social-link {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+}
