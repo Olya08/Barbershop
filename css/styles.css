@@ -1,6 +1,3 @@
-body {
-  font-family: "Open Sans", sans-serif;
-}
 :root {
   --primary-color: #ff6c00;
   --secondary-color: #191c26;
@@ -8,6 +5,11 @@ body {
   --text-primary: #303030;
   --text-secondary: #9da4bd;
   --text-primary-lighten: #555555;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--text-primary-lighten);
 }
 
 ul {
@@ -20,10 +22,20 @@ a {
   text-decoration: none;
 }
 
-.suptitle-secondary {
+.suptitle-secondary,
+.suptitle-primary {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.suptitle-primary {
+  color: var(--text-primary);
+}
+
+.suptitle-secondary {
   color: rgba(157, 164, 189, 0.6);
 }
 
@@ -35,7 +47,14 @@ h2.section-title {
 }
 
 h2.section-title.lighten {
-  color: #ffffff;
+  color: teal;
+}
+.hero-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
 }
 
 .hero-description {
@@ -43,6 +62,7 @@ h2.section-title.lighten {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.67;
+  letter-spacing: 0.02em;
 }
 
 /* Navbar */
@@ -55,7 +75,7 @@ nav.navbar {
 }
 
 a.nav-link {
-  color: #ffffff;
+  color: teal;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -65,6 +85,37 @@ a.nav-link {
 a.nav-link:hover,
 .social-link:hover {
   color: var(--primary-color);
+}
+.phone-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: teal;
+}
+
+.primary-button {
+  border-radius: 25px;
+  border: 1px solid #ff6c00;
+  color: teal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.primary-button.darken {
+  color: var(--text-primary);
+}
+
+/* Sidebar */
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: var(--text-primary);
 }
 
 p.section-description {
@@ -81,4 +132,65 @@ p.section-description {
   font-size: 11px;
   line-height: 15px;
   letter-spacing: 0.2em;
+}
+/* Price section */
+.price-list {
+  display: inline-block;
+}
+
+.price-list .text,
+.price-list .price {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: var(--text-secondary);
+}
+.price-list .price {
+  text-align: right;
+}
+
+/* Why section */
+.number-box {
+  display: inline-block;
+  width: 170px;
+  height: 132px;
+  background-color: #f7f7f7;
+}
+
+.number-box .text {
+  display: block;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: var(--text-primary);
+}
+.number-box span {
+  display: block;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: var(--text-primary);
+}
+/* Master card */
+.master {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+.position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
 }
