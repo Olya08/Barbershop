@@ -52,6 +52,21 @@ h3 {
   text-transform: uppercase;
 }
 
+.suptitle-primary::before,
+.suptitle-secondary::before {
+  width: 60px;
+  height: 1px;
+  background: #9da4bd99;
+  content: "";
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.suptitle-primary::before {
+  background: rgba(48, 48, 48, 1);
+}
+
 .suptitle-primary {
   color: var(--text-primary);
 }
@@ -283,14 +298,17 @@ p.section-description {
 .number-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   width: 48%;
   padding: 0 100px;
 }
 .number-box {
   display: inline-block;
-  width: 170px;
+  min-width: 170px;
+  width: 48%;
   height: 132px;
   background-color: #f7f7f7;
+  margin-top: 30px;
 }
 
 .number-box .text,
@@ -310,6 +328,7 @@ p.section-description {
   line-height: 1.36;
 }
 /* Master card */
+
 .master {
   font-weight: 400;
   font-size: 18px;
@@ -317,6 +336,16 @@ p.section-description {
   letter-spacing: 0.02em;
   color: var(--text-primary);
 }
+
+.masters-list {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 300px;
+}
+
+.masters-card {
+}
+
 .position {
   font-weight: 400;
   font-size: 14px;
